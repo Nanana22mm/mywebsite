@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>nana_saito_profile</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Hiragino Sans", "Meiryo", sans-serif;
+        }
+
+        .margin1 {
+            margin-top: 32px;
+        }
+
+        .margin2 {
+            margin-top: 16px;
+        }
+
+        .margin3 {
+            margin-top: 48px;
+        }
+
+        .heading1 {
+            font-size: 32px;
+        }
+
+        .heading2 {
+            font-size: 24px;
+        }
+
+        .text {
+            margin: 20px 0 0;
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .profile-image {
+            margin: 20px 0 0;
+            text-align: center;
+        }
+
+        .profile-image img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+            object-position: 0px 0px;
+        }
+
+        .git-image {
+            margin: 10px 0 0;
+            text-align: center;
+        }
+
+        .git-image img {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            border-radius: 50%;
+            object-position: 0px 0px;
+        }
+
+        .wrap {
+            padding: 32px 0 64px;
+            background-color: #D8DEE9;
+        }
+
+        .hr-design1 {
+            border: none;
+            border-top: solid 3px #8FBCBB;
+        }
+
+        .box-design {
+            width: 35em;
+            background-color: #D8DEE9;
+            margin: 10px auto;
+        }
+    </style>
+
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body class="wrap">
+    <div class="content">
+        <h1 class="heading1 margin1 text-center">Profile</h1>
+        <figure class="profile-image">
+            <img src="myimage.jpg" alt="Image">
+        </figure>
+        <h2 class="heading2 margin1 text-center">齊藤 七菜</h2>
+        <p class="text text-center">2026 卒</br>慶應義塾大学 理工学研究科</br>開放環境科学専修 情報工学科専攻 </br>河野研究室所属</p>
+
+        <hr class="hr-design1 margin2">
+        <details>
+            <summary class="heading2 text-center margin3">自己紹介</summary>
+            <div class="box-design">
+                現在修士 1 年．
+                大学時代は理工学部のテニス部に3年間所属し女子部主務を務めた．
+                コロナ後の活動で合宿や OBOG 会などの再開に貢献し，部の活動を支えた．
+                またロボット技術研究会にも所属し，勉強や部活と両立して取り組んだ．</br>
+                趣味はテニス，ピラティス，ランニング，ハイキング，旅行などである．
+                海外旅行に行くにも好きで，スイス，シンガポール，イタリア，インドに旅行経験がある．
+                インドでは 3 週間程度友人と自由旅行をし，様々な人と出会い交流をした．
+            </div>
+        </details>
+
+        <details>
+            <summary class="heading2 text-center margin3">研究内容</summary>
+            <div class="box-design">
+                研究では，高速な分散インメモリキャッシュの開発をしている.
+                クラウドシステムを利用する際には応答時間低減のため一般的にインメモリキャッシュを利用する．
+                しかしこの時キャッシュが故障すると回復処理を待たなければならない．
+                最近の大規模なシステムでは故障が頻発するため，これを毎回待機すると遅延が大きくなってしまう．
+                本研究の目標はこの遅延を小さくすることだ．
+                具体的なアプリケーションは，機械学習などを想定している．
+                先行研究からこれらのアプリケーションではデータが多少欠損したとしても性能が低下しないことが示されているため，障害が発生しても回復処理を行わず，取得できるデータのみを返すことを提案する．
+                実装ではクライアントがデータを要求すると分散保存されたデータを取得・結合し，返すシステムを完成させた．
+                今後はマルチスレッド化により回復処理を待機しないことで，遅延を最小化していく．
+            </div>
+        </details>
+
+        <details>
+            <summary class="heading2 text-center margin3">開発経験</summary>
+            <div class="box-design">
+                現在，友人と Flutter を使ってボイスチャットアプリを開発している．
+                またシェル，DHCP，FTP を C 言語で自作した経験もある．
+                各開発では可読性を重視し，コードの行数ができる限り小さくなるよう工夫した．
+                更に，Rasberry Pi を用いた IoT アプリの開発も行った．
+                制作には Python を用い，水分不足を防止する機器や子供の成長につながるおもちゃなどを作成した．
+                この時スマートフォンとの連携を行い，利用しやすさを向上させるとともに，機器の制作においてユーザの安全性にも配慮した．</br>
+                <a href="https://github.com/Nanana22mm/myportfolio" target="_blank">
+                    <figure class="git-image"><img src="git.png"></figure>
+                </a>
+            </div>
+        </details>
+
+        <details>
+            <summary class="heading2 text-center margin3">プログラミング言語</summary>
+            <div class="box-design">
+                <ul>
+                    <li>C 言語, C++, Python...日々研究で使用している．</li>
+                    <li>Java...授業で習い，個人開発で利用した．</li>
+                    <li>Dart...チャットアプリ制作で使用している．</li>
+                    <li>HTML, CSS, JavaScript...独学で勉強し，簡単なものであれば作成できる．</li>
+                </ul>
+            </div>
+        </details>
+
+    </div>
+</body>
+
+</html>
